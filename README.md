@@ -10,4 +10,4 @@ Visite [meu portfólio](https://ochristopherfilipe.github.io/portifolio/index.ht
 
 Sinta-se à vontade para entrar em contato comigo!
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)]([https://www.linkedin.com/in/seuusuario](https://www.linkedin.com/in/christopherfilipe/))
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/christopherfilipe/)
