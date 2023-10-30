@@ -2078,8 +2078,9 @@ input, select, textarea {
 		font-weight: 900;
 		letter-spacing: 0.075em;
 		height: 3rem;
+		width: 10rem;
 		line-height: 3rem;
-		padding: 0 2rem;
+		/* padding: 0 2rem; */
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -2154,8 +2155,9 @@ input, select, textarea {
 		.button.large {
 			font-size: 0.9rem;
 			height: 3.5rem;
+			width: 12rem;
 			line-height: 3.5rem;
-			padding: 0 2.75rem;
+			/* padding: 0 2.75rem; */
 		}
 
 		@media screen and (max-width: 980px) {
