@@ -1,234 +1,275 @@
-<!DOCTYPE HTML>
-<html>
-	<head> elements
-		<title>Christopher</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="icon" href="images/favicon.png" type="image/x-icon" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher Santos | Desenvolvedor de Software</title>
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="assets/images/logo.png" alt="Christopher Santos Logo" class="logo-img">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio" class="active">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="menu-mobile">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Christopher Santos<br />
-						Portifólio</h1>
-						<p>Experiente em Análise e Ciências de dados, Python e suas bibliotecas, MySQL, PostgreSQL, Machine Learning, TensorFlow, Power BI, Tableau, AWS e GCP.<br><a href="https://www.linkedin.com/in/christopherfilipe/">@christophersantos</a>
-						
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div id="vanta-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="reveal-text">Christopher Santos</h1>
+                <h2 class="reveal-text delay-1">Desenvolvedor de Software</h2>
+                <p class="reveal-text delay-2">Transformando ideias em experiências digitais excepcionais</p>
+                <div class="hero-buttons reveal-text delay-3">
+                    <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                    <a href="https://wa.me/5592999961672" class="btn btn-secondary">Fale Comigo</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>Rolar para baixo</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Principais Projetos</a>
-					</header>
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre Mim</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>Olá! Sou Christopher Santos, um desenvolvedor de software com formação em Ciência de Dados, apaixonado por criar e desenvolver projetos digitais que fazem a diferença.</p>
+                    <p>Minha jornada na tecnologia começou com a curiosidade de entender como as coisas funcionam no mundo digital, e se transformou em uma paixão por construir soluções que combinam estética e funcionalidade.</p>
+                    <p>Acredito que cada projeto é uma oportunidade de criar algo único que não apenas atende às necessidades técnicas, mas também proporciona uma experiência memorável para os usuários. É essa combinação de análise de dados e criatividade que torna meu trabalho especial.</p>
+                </div>
+                <div class="sobre-image">
+                    <div class="image-wrapper">
+                        <img src="assets/images/5143198770203307786.jpg" alt="Christopher Santos" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Principais Projetos</a></li>
-							<li><a href="sobre mim.html">Sobre mim</a></li>
-							<li><a href="tecnologias e ferramentas.html">Tecnologias e Ferramentas</a></li>
-							<li><a href="dashboards.html">Dashboards</a></li>
+    <!-- Projetos Section -->
+    <section id="projetos" class="projetos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projetos Recentes</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="projetos-grid">
+                <div class="projeto-card">
+                    <div class="projeto-image">
+                        <img src="assets/images/Colégio Dom Bosco.jpg" alt="Projeto Colégio Dom Bosco">
+                        <div class="projeto-overlay">
+                            <div class="projeto-info">
+                                <h3>Colégio Dom Bosco</h3>
+                                <p>Website institucional para uma instituição educacional de prestígio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projeto-card">
+                    <div class="projeto-image">
+                        <img src="assets/images/Educação Yanomami.jpg" alt="Projeto Educação Yanomami">
+                        <div class="projeto-overlay">
+                            <div class="projeto-info">
+                                <h3>Educação Yanomami</h3>
+                                <p>Plataforma educacional para preservação cultural e apoio à comunidade indígena.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projeto-card">
+                    <div class="projeto-image">
+                        <img src="assets/images/Inspetoria Salesiana.jpg" alt="Projeto Inspetoria Salesiana">
+                        <div class="projeto-overlay">
+                            <div class="projeto-info">
+                                <h3>Inspetoria Salesiana</h3>
+                                <p>Portal institucional com sistema integrado de gestão de conteúdo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-projects">
+                <h3>Projetos em Destaque</h3>
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <video autoplay loop muted playsinline poster="assets/images/video-thumbnail-1.png">
+                                <source src="assets/videos/IDPB Filadélfia.mp4" type="video/mp4">
+                                Seu navegador não suporta o elemento de vídeo.
+                            </video>
+                            <h4>IDPB Filadélfia</h4>
+                            <p>Website completo com sistema de gerenciamento de membros, finanças e liderança.</p>
+                        </div>
+                        <div class="carousel-slide">
+                            <video autoplay loop muted playsinline poster="assets/images/video-thumbnail-2.png">
+                                <source src="assets/videos/MS TechBio – Soluções Ambientais.mp4" type="video/mp4">
+                                Seu navegador não suporta o elemento de vídeo.
+                            </video>
+                            <h4>MS TechBio – Soluções Ambientais</h4>
+                            <p>Plataforma corporativa de serviços tecnológicos e sistema de gestão ambiental.</p>
+                        </div>
+                        <div class="carousel-slide">
+                            <video autoplay loop muted playsinline poster="assets/images/video-thumbnail-3.png">
+                                <source src="assets/videos/Sessão das Dez • Cinema, Cultura Pop e Podcast.mp4" type="video/mp4">
+                                Seu navegador não suporta o elemento de vídeo.
+                            </video>
+                            <h4>Sessão das Dez</h4>
+                            <p>Portal de cultura pop, cinema e podcast.</p>
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn next" aria-label="Próximo"><i class="fas fa-chevron-right"></i></button>
+                    <div class="carousel-indicators">
+                        <span class="indicator active"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.kaggle.com/ochristopherfilipe" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
-							<li><a href="https://www.linkedin.com/in/christopherfilipe/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/ochristopherfilipe" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+    <!-- Serviços Section -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meus Serviços</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Criação de websites responsivos, modernos e otimizados para todos os dispositivos, garantindo a melhor experiência para seus usuários.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Design UI/UX</h3>
+                    <p>Interfaces intuitivas e atraentes que proporcionam uma experiência de usuário excepcional, aumentando o engajamento e a satisfação.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Análise de Dados</h3>
+                    <p>Transformação de dados em insights valiosos para tomada de decisões estratégicas, utilizando técnicas avançadas de análise e visualização.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Websites Responsivos</h3>
+                    <p>Garantia de que seu site funcionará perfeitamente em qualquer dispositivo, desde smartphones até desktops.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Sistemas Complexos</h3>
+                    <p>Desenvolvimento de sistemas personalizados para atender necessidades específicas de negócios, com arquitetura robusta e escalável.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Manutenção & Suporte</h3>
+                    <p>Serviços contínuos de manutenção e suporte técnico para garantir que seu site esteja sempre atualizado e funcionando perfeitamente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<!-- Main -->
-					<div id="main">
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <h3>Vamos transformar sua ideia em realidade</h3>
+                    <p>Estou pronto para ajudar a criar a presença digital perfeita para o seu negócio. Entre em contato para discutirmos seu projeto.</p>
+                    <div class="contato-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(92) 99996-1672</span>
+                    </div>
+                    <div class="contato-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>ochristopherfilipe@gmail.com</span>
+                    </div>
+                    <div class="contato-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Manaus, AM - Brasil</span>
+                    </div>
+                    <a href="https://wa.me/5592999961672" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        Fale comigo no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date">Set, 2023</span>
-									<h2><a href="#">Projeto de <br />
-									Previsão de renda</a></h2>
-									<p>O objetivo desta análise é prever a variação de renda dos clientes 
-									de uma instituição financeira. Os dados utilizados na análise e previsão 
-									foram coletados e distribuidos em variáveis com características diversas 
-									que auxiliam na previsão ou explicação da renda de um cliente.</p>
-								</header>
-								<a href="#" class="image main"><img src="images/money.png" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://previsaoderenda.streamlit.app/" class="button large">Ver App</a></li>
-									<li><a href="https://github.com/ochristopherfilipe/previsao_de_renda" class="button large">Ver Projeto</a></li>
-								</ul>
-							</article>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo"><img src="assets/images/logo.png" alt="Christopher Santos Logo" class="logo-img-footer"></div>
+                <p>&copy; 2023 Christopher Santos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">Out, 2023</span>
-										<h2><a href="#">Análise de vendas <br />
-											com Telemarketing</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/telemarketing.jpg" alt="" /></a>
-									<p><br>Este projeto foi desenvolvido como objetivo criar uma aplicação para análise de dados de uma campanha de telemarketing.										.
-									</p>
-									<ul class="actions special">
-										<li><a href="https://telemarketing.streamlit.app/" class="button">Ver App</a></li>
-										<li><a href="https://github.com/ochristopherfilipe/Telemarketing_analisys" class="button">Ver Projeto</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">Out, 2023</span>
-										<h2><a href="#">Análise dos seus <br />
-											dados da Uber</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/uber.jpg" alt="" /></a>
-									<p><br>O objetivo deste aplicativo é fazer a análise das suas viagens com a Uber. Você pode carregar seus dados da Uber e explorar várias informações, como gastos, tipos de transporte utilizados, locais de partida e chegada, e muito mais.										.
-									</p>
-									<ul class="actions special">
-										<li><a href="https://uberdata.streamlit.app/" class="button">Ver App</a></li>
-										<li><a href="https://github.com/ochristopherfilipe/uber_data" class="button">Ver Projeto</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">Dez, 2023</span>
-										<h2><a href="#">Projeto De Segmentação <br />
-											De Clientes</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/RFV.jpg" alt="" /></a>
-									<p><br>O objetivo deste projeto é realizar a segmentação de clientes por meio da análise das métricas RFV (recência, frequência e valor). Essa segmentação permite identificar grupos de clientes com comportamentos semelhantes, o que pode ajudar a empresa a direcionar suas estratégias de marketing e CRM de forma mais eficiente.										.
-									</p>
-									<ul class="actions special">
-										<li><a href="https://segmentationrfv.streamlit.app/" class="button">Ver App</a></li>
-										<li><a href="https://github.com/ochristopherfilipe/RFV" class="button">Ver Projeto</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">Set, 2023</span>
-										<h2><a href="#">Previsão de gastos<br />
-										com Plano de Saúde</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/planodesaude.jpg" alt="" /></a>
-									<p><br>O objetivo principal é construir um modelo de regressão capaz de prever as despesas de planos de saúde com base em diferentes características dos pacientes, tais como idade, IMC (índice de massa corporal), número de filhos, entre outros...</p>
-									<ul class="actions special">
-										<li><a href="https://predicaodeplanodesaudechristophersantos.streamlit.app/" class="button">Ver App</a></li>
-										<li><a href="https://github.com/ochristopherfilipe/Plano_de_saude_Machine_learning" class="button">Ver Projeto</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">Ago, 2023</span>
-										<h2><a href="#">regressão logística de chances<br />
-										de doenças cardíacas</a></h2>
-									</header>
-									<a href="https://github.com/ochristopherfilipe/HeartDiseaseLogisticRegression/tree/main" class="image fit"><img src="images/heart.jpg" alt="" /></a>
-									<p>O objetivo principal desta nálise de regressão logística usando um conjunto de dados que descreve informações médicas e diagnósticos de doenças cardíacas. Nele exploraro o processo de construção, avaliação e interpretação de um modelo de regressão logística. Visando criar um modelo que possa prever as chances do paciente ter ou desenvolver um doença cardíaca.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/ochristopherfilipe/HeartDiseaseLogisticRegression/tree/main" class="button">Ver Projeto</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">Ago, 2023</span>
-										<h2><a href="#">Identificação de <br />
-										Atividade Humana<br> com smartphone</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/atividadehumana.jpg" alt="" /></a>
-									<p>O objetivo é classificar a atividade humana, se a pessoa está andando, subindo escada, descendo escada, parado, sentado ou deitado, com base nos dados do acelerômetro e giroscópio do smartphone.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/ochristopherfilipe/atividadehumanacomsmartphone" class="button">Ver Projeto</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">Jul, 2023</span>
-										<h2><a href="#">Marketing bancário<br />
-										usando I.A. Generativa</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/marketingia.jpg" alt="" /></a>
-									<p>Este projeto tem como objetivo envolver os clientes de maneira mais personalizada, utilizando o poder da Inteligência Artificial Generativa (IA) para criar mensagens de marketing personalizadas que serão entregues a cada cliente.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/ochristopherfilipe/marketingbancariocomapiopenai" class="button">Ver Projeto</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">Set, 2023</span>
-										<h2><a href="#">Análise de dados de <br>Relatório de Atividades<br />
-										Potencialmente poluidoras</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/rapp.webp" alt="" /></a>
-									<p><br>O propósito é fornecer insights e informações críticas para a gestão e regulação de tais atividades, visando ao cumprimento das normas ambientais e à redução do impacto negativo dessas atividades no meio ambiente e na saúde das comunidades circundantes. </p>
-									<ul class="actions special">
-										<li><a href="https://github.com/ochristopherfilipe/Relatorio-de-entrega-RAPP-/tree/main" class="button">Ver Projeto</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">Jul, 2023</span>
-										<h2><a href="#">Concessão de Cartão de Crédito<br />
-										com Machine Learning</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/credito.webp" alt="" /></a>
-									<p><br>Este projeto foi desenvolvido como objetivo criar um modelo de machine learning para prever a concessão de cartões de crédito a novos clientes com base em suas informações financeiras.
-									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/ochristopherfilipe/Projeto-1" class="button">Ver Projeto</a></li>
-									</ul>
-								</article>
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
-							</section>
-
-
-							
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section class="alt">
-								<h3>Endereço</h3>
-								<p>Rua Paládio, N° 144<br />
-								Manaus, AM 69030-676</p>
-							</section>
-							<section>
-								<h3>Celular</h3>
-								<p><a href="#">(92) 9 9996-1672</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">ochristopherfilipe@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons">
-									<li><a href="https://www.kaggle.com/ochristopherfilipe" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
-									<li><a href="https://www.linkedin.com/in/christopherfilipe/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/ochristopherfilipe" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>								
-							</section>
-						</section>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html> 
