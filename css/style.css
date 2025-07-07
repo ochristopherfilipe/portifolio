@@ -872,8 +872,11 @@ footer {
         height: 180px;
     }
     .image-wrapper {
-        width: 120px;
-        height: 100%;
+        width: 180px;
+        height: 220px;
+    }
+    .sobre-image {
+        height: 220px;
     }
 }
 
