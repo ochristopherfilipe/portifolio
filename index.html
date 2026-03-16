@@ -1,247 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christopher Santos | Desenvolvedor de Software e Cientista de dados</title>
-    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <title>Christopher Santos | Portfólio</title>
+    <meta name="description" content="Portfólio de Christopher Santos — Ciência de Dados, Power BI, Automação, IA e Sistemas." id="page-description">
+    <link rel="icon" href="assets/generated/cs-mark.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
 </head>
-
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="loader"></div>
+    <div class="shell">
+
+        <!-- ======== HEADER ======== -->
+        <header class="header">
+            <div class="header-left">
+                <div class="avatar-group">
+                    <div class="avatar">
+                        <img src="assets/images/5143198770203307786.jpg" alt="Christopher Santos">
+                    </div>
+                </div>
+                <span class="user-name">
+                    <span class="user-name__full">Christopher Santos</span>
+                    <span class="user-name__short">Christopher</span>
+                </span>
+            </div>
+
+            <div class="header-right">
+                <span class="header-time" id="clock">00:00</span>
+                <div class="signal-bars">
+                    <span></span><span></span><span></span><span></span>
+                </div>
+                <img src="assets/icons/wifi.png" alt="Wi-Fi" class="wifi-icon">
+                <span>82%</span>
+                <div class="battery">
+                    <div class="battery-level"></div>
+                    <div class="battery-tip"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ======== CATEGORY TITLE ======== -->
+        <div class="category-title-bar">
+            <h2 class="category-title" id="category-title">DATA SCIENCE PROJECT</h2>
+        </div>
+
+        <!-- ======== CAROUSEL ======== -->
+        <div class="carousel-area">
+            <div class="carousel-wrapper">
+                <div class="carousel-track" id="carousel-track">
+                    <!-- Cards are injected by JS -->
+                </div>
+            </div>
+            <div class="carousel-dots" id="carousel-dots"></div>
+        </div>
+
+        <!-- ======== DOCK ======== -->
+        <nav class="dock-bar" id="dock-bar" aria-label="Categorias do portfólio">
+            <!-- Dock icons injected by JS -->
+        </nav>
+
+        <!-- ======== FOOTER BAR ======== -->
+        <footer class="footer-bar">
+            <div class="footer-right">
+                <button class="footer-action footer-action--github" id="btn-view-project">
+                    <span class="footer-action__key" id="btn-view-project-key">+</span>
+                    <span id="btn-view-project-label">Ver GitHub</span>
+                </button>
+                <button class="footer-action footer-action--language" id="btn-open-details">
+                    <span class="footer-action__key" id="btn-open-details-key">=</span>
+                    <span id="btn-open-details-label">Português/English</span>
+                </button>
+            </div>
+        </footer>
+
+        <!-- ======== DISCLAIMER ======== -->
+        <div class="disclaimer-card" id="disclaimer-card">
+            <span class="disclaimer-icon">🔒</span>
+            <p id="disclaimer-text">Todos os dados usados são exclusivamente para fins de demonstração, garantindo total privacidade e conformidade ética.</p>
+        </div>
+
     </div>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <img src="assets/images/logo.png" alt="Christopher Santos Logo" class="logo-img">
+    <!-- ======== MODAL ======== -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-dialog">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-header">
+                <p class="modal-category" id="modal-category"></p>
+                <h2 class="modal-title" id="modal-title"></h2>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#inicio" class="active">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-                <div class="menu-mobile">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="inicio" class="hero">
-        <div id="vanta-background"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="reveal-text">Christopher Santos</h1>
-                <h2 class="reveal-text delay-1">Desenvolvedor de Software</h2>
-                <p class="reveal-text delay-2">Transformando ideias em experiências digitais excepcionais</p>
-                <div class="hero-buttons reveal-text delay-3">
-                    <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
-                    <a href="https://wa.me/5592999961672" class="btn btn-secondary">Fale Comigo</a>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-down">
-            <span>Rolar para baixo</span>
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <!-- Sobre Section -->
-    <section id="sobre" class="sobre">
-        <div class="container">
-            <div class="section-header">
-                <h2>Sobre Mim</h2>
-                <div class="separator"></div>
-            </div>
-            <div class="sobre-content">
-                <div class="sobre-text">
-                    <p>Olá! Sou Christopher Santos, um desenvolvedor de software com formação em Ciência de Dados,
-                        apaixonado por criar e desenvolver projetos digitais que fazem a diferença.</p>
-                    <p>Quero saber mais sobre você também, tem alguma ideia legal? Vamos marcar uma conversa, vamos
-                        tirar esse projeto do papel!</p>
-                    <p>Acredito que cada projeto é uma oportunidade de criar algo único que não apenas atende às
-                        necessidades técnicas, mas também proporciona uma experiência memorável para os usuários.</p>
-                </div>
-                <div class="sobre-image">
-                    <div class="image-wrapper">
-                        <img src="assets/images/5143198770203307786.jpg" alt="Christopher Santos" class="profile-image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="video-projects">
-        <h3>Projetos em Destaque</h3>
-        <div class="carousel-container">
-            <div class="carousel-track">
-                <div class="carousel-slide">
-                    <video autoplay loop muted playsinline poster="assets/images/video-thumbnail-1.png">
-                        <source src="assets/videos/IDPB Filadélfia.mp4" type="video/mp4">
-                        Seu navegador não suporta o elemento de vídeo.
-                    </video>
-                    <h4>IDPB Filadélfia</h4>
-                    <p>Website completo com sistema de gerenciamento de membros, finanças e liderança.</p>
-                </div>
-                <div class="carousel-slide">
-                    <video autoplay loop muted playsinline poster="assets/images/video-thumbnail-2.png">
-                        <source src="assets/videos/MS TechBio – Soluções Ambientais.mp4" type="video/mp4">
-                        Seu navegador não suporta o elemento de vídeo.
-                    </video>
-                    <h4>MS TechBio – Soluções Ambientais</h4>
-                    <p>Plataforma corporativa de serviços tecnológicos e sistema de gestão ambiental.</p>
-                </div>
-                <div class="carousel-slide">
-                    <video autoplay loop muted playsinline poster="assets/images/video-thumbnail-3.png">
-                        <source src="assets/videos/Sessão das Dez • Cinema, Cultura Pop e Podcast.mp4" type="video/mp4">
-                        Seu navegador não suporta o elemento de vídeo.
-                    </video>
-                    <h4>Sessão das Dez</h4>
-                    <p>Portal de cultura pop, cinema e podcast.</p>
-                </div>
-            </div>
-            <button class="carousel-btn prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
-            <button class="carousel-btn next" aria-label="Próximo"><i class="fas fa-chevron-right"></i></button>
-            <div class="carousel-indicators">
-                <span class="indicator active"></span>
-                <span class="indicator"></span>
-                <span class="indicator"></span>
-            </div>
+            <div class="modal-thumb" id="modal-thumb"></div>
+            <div class="modal-description" id="modal-description"></div>
+            <div class="modal-tags" id="modal-tags"></div>
+            <div class="modal-actions" id="modal-actions"></div>
         </div>
     </div>
-    </div>
-    </section>
 
-    <!-- Serviços Section -->
-    <section id="servicos" class="servicos">
-        <div class="container">
-            <div class="section-header">
-                <h2>Meus Serviços</h2>
-                <div class="separator"></div>
-            </div>
-            <div class="servicos-grid">
-                <div class="servico-card">
-                    <div class="servico-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Criação de websites responsivos, modernos e otimizados para todos os dispositivos, garantindo a
-                        melhor experiência para seus usuários.</p>
-                </div>
-                <div class="servico-card">
-                    <div class="servico-icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <h3>Design UI/UX</h3>
-                    <p>Interfaces intuitivas e atraentes que proporcionam uma experiência de usuário excepcional,
-                        aumentando o engajamento e a satisfação.</p>
-                </div>
-                <div class="servico-card">
-                    <div class="servico-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Análise de Dados</h3>
-                    <p>Transformação de dados em insights valiosos para tomada de decisões estratégicas, utilizando
-                        técnicas avançadas de análise e visualização.</p>
-                </div>
-                <div class="servico-card">
-                    <div class="servico-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Websites Responsivos</h3>
-                    <p>Garantia de que seu site funcionará perfeitamente em qualquer dispositivo, desde smartphones até
-                        desktops.</p>
-                </div>
-                <div class="servico-card">
-                    <div class="servico-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>Sistemas Complexos</h3>
-                    <p>Desenvolvimento de sistemas personalizados para atender necessidades específicas de negócios, com
-                        arquitetura robusta e escalável.</p>
-                </div>
-                <div class="servico-card">
-                    <div class="servico-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3>Manutenção & Suporte</h3>
-                    <p>Serviços contínuos de manutenção e suporte técnico para garantir que seu site esteja sempre
-                        atualizado e funcionando perfeitamente.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contato Section -->
-    <section id="contato" class="contato">
-        <div class="container">
-            <div class="section-header">
-                <h2>Entre em Contato</h2>
-                <div class="separator"></div>
-            </div>
-            <div class="contato-content">
-                <div class="contato-info">
-                    <h3>Vamos transformar sua ideia em realidade</h3>
-                    <p>Estou pronto para ajudar a criar a presença digital perfeita para o seu negócio. Entre em contato
-                        para discutirmos seu projeto.</p>
-                    <div class="contato-item">
-                        <i class="fas fa-phone"></i>
-                        <span>(92) 99996-1672</span>
-                    </div>
-                    <div class="contato-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>ochristopherfilipe@gmail.com</span>
-                    </div>
-                    <div class="contato-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Manaus, AM - Brasil</span>
-                    </div>
-                    <a href="https://wa.me/5592999961672" class="whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i>
-                        Fale comigo no WhatsApp
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo"><img src="assets/images/logo.png" alt="Christopher Santos Logo"
-                        class="logo-img-footer"></div>
-                <p>&copy; 2023 Christopher Santos. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to top button -->
-    <a href="#" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-
-    <!-- Scripts -->
     <script src="js/main.js"></script>
 </body>
-
 </html>
