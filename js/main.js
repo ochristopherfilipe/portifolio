@@ -4,6 +4,8 @@
    ============================================ */
 
 const GITHUB_PROFILE_URL = 'https://github.com/ochristopherfilipe';
+const CHURN_NOTEBOOK_URL = 'https://github.com/ochristopherfilipe/chance-de-cancelamento';
+const VIRTUAL_INSTRUMENT_REPO_URL = 'https://github.com/ochristopherfilipe/virtual-instrument-cv';
 const LINKEDIN_PROFILE_URL = 'https://www.linkedin.com/in/christopherfilipe';
 const CONTACT_EMAIL = 'ochristopherfilipe@gmail.com';
 const CONTACT_WHATSAPP = '+55 92 99996-1672';
@@ -15,6 +17,8 @@ const CONTACT_LOCATION = {
 const RESUME_PDF_PATH = 'assets/docs/CV-Christopher.pdf';
 const RESUME_DOC_URL = 'https://docs.google.com/document/d/1zPIRLNYGafgbCHoS46noUxQAtUm6l0eC/edit?usp=sharing&ouid=116316570331701259186&rtpof=true&sd=true';
 const LANGUAGE_STORAGE_KEY = 'portfolio-language';
+const PROFILE_IMAGE_PATH = 'assets/images/perfil.png?v=20260324-1';
+const VIRTUAL_INSTRUMENT_CARD_IMAGE = 'assets/images/instrumento-cv.png?v=20260324-1';
 const WHATSAPP_ICON = `
   <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
     <path fill="currentColor" d="M19.05 4.94A9.77 9.77 0 0 0 12.09 2c-5.44 0-9.86 4.42-9.86 9.86 0 1.74.46 3.44 1.32 4.94L2 22l5.37-1.41a9.86 9.86 0 0 0 4.72 1.21h.01c5.44 0 9.86-4.42 9.86-9.86 0-2.63-1.02-5.1-2.91-7m-6.96 15.19h-.01a8.2 8.2 0 0 1-4.17-1.14l-.3-.18-3.19.84.85-3.11-.2-.32a8.16 8.16 0 0 1-1.26-4.36c0-4.5 3.66-8.17 8.17-8.17 2.18 0 4.24.85 5.78 2.39a8.12 8.12 0 0 1 2.39 5.79c0 4.5-3.67 8.17-8.17 8.17m4.48-6.12c-.25-.13-1.48-.73-1.7-.81-.23-.08-.39-.13-.56.12s-.65.81-.8.97c-.15.17-.29.19-.54.06a6.7 6.7 0 0 1-1.98-1.22 7.4 7.4 0 0 1-1.37-1.7c-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.47-.4-.41-.56-.42h-.47c-.17 0-.43.06-.65.31-.23.25-.86.84-.86 2.05 0 1.22.88 2.39 1 2.55.13.17 1.72 2.63 4.16 3.68.58.25 1.04.4 1.39.51.58.18 1.1.15 1.52.09.46-.07 1.48-.61 1.69-1.2.21-.59.21-1.1.15-1.21-.06-.1-.23-.17-.48-.29"/>
@@ -144,7 +148,7 @@ const PROJECTS = [
       en: 'Open LinkedIn',
     },
     link: LINKEDIN_PROFILE_URL,
-    image: 'assets/images/5143198770203307786.jpg',
+    image: PROFILE_IMAGE_PATH,
     cardClickAction: 'link',
   },
   {
@@ -234,20 +238,24 @@ const PROJECTS = [
     id: 3,
     category: 'datascience',
     title: {
-      'pt-BR': 'Previsão de Churn',
-      en: 'Churn Prediction',
+      'pt-BR': 'Chance de Cancelamento',
+      en: 'Customer Churn Risk',
     },
     emoji: '📉',
     description: {
-      'pt-BR': 'Predição de churn de clientes utilizando Random Forest e XGBoost, com pipeline completo de feature engineering e validação cruzada.',
-      en: 'Customer churn prediction using Random Forest and XGBoost, with a complete feature engineering and cross-validation pipeline.',
+      'pt-BR': 'Notebook em Python para estimar a chance de cancelamento de clientes com base em dados históricos, incluindo exploração de dados, preparação das variáveis, modelagem de classificação e avaliação dos resultados para apoiar ações de retenção.',
+      en: 'Python notebook to estimate customer churn risk from historical data, including data exploration, feature preparation, classification modeling, and evaluation to support retention actions.',
     },
     tags: {
-      'pt-BR': ['Python', 'XGBoost', 'Engenharia de Atributos'],
-      en: ['Python', 'XGBoost', 'Feature Engineering'],
+      'pt-BR': ['Python', 'Jupyter Notebook', 'Classificação', 'Análise de Dados'],
+      en: ['Python', 'Jupyter Notebook', 'Classification', 'Data Analysis'],
     },
-    link: '#',
-    image: '',
+    actionLabel: {
+      'pt-BR': 'Ver notebook',
+      en: 'View notebook',
+    },
+    link: CHURN_NOTEBOOK_URL,
+    image: 'assets/images/churn3.png?v=20260324-1',
   },
   {
     id: 4,
@@ -286,6 +294,29 @@ const PROJECTS = [
     },
     link: '#',
     image: '',
+  },
+  {
+    id: 12,
+    category: 'automacao',
+    title: {
+      'pt-BR': 'Virtual Instrument CV',
+      en: 'Virtual Instrument CV',
+    },
+    emoji: '🎹',
+    description: {
+      'pt-BR': 'Instrumento musical touchless construído em Python que usa OpenCV, MediaPipe e DSP para reconhecer gestos das duas mãos pela webcam, converter acordes e controles expressivos em eventos MIDI e acionar sintetizadores em tempo real. O projeto combina filtragem 1-Euro, lógica geométrica invariável à rotação e um arpejador assíncrono para reduzir jitter e manter a resposta musical estável.',
+      en: 'Touchless musical instrument built in Python that uses OpenCV, MediaPipe, and DSP to recognize two-hand gestures from the webcam, translate chords and expressive controls into MIDI events, and drive synthesizers in real time. The project combines 1-Euro filtering, rotation-invariant geometric logic, and an asynchronous arpeggiator to reduce jitter and keep the musical response stable.',
+    },
+    tags: {
+      'pt-BR': ['Python', 'OpenCV', 'MediaPipe', 'MIDI', 'DSP'],
+      en: ['Python', 'OpenCV', 'MediaPipe', 'MIDI', 'DSP'],
+    },
+    actionLabel: {
+      'pt-BR': 'Ver repositório',
+      en: 'View repository',
+    },
+    link: VIRTUAL_INSTRUMENT_REPO_URL,
+    image: VIRTUAL_INSTRUMENT_CARD_IMAGE,
   },
   {
     id: 6,
@@ -528,12 +559,18 @@ function renderCarousel() {
 
   $carouselTrack.innerHTML = projects.map((project, index) => {
     const title = getLocalized(project.title);
+    const thumbClass = project.image
+      ? 'project-card__thumb project-card__thumb--image'
+      : 'project-card__thumb project-card__thumb--placeholder';
+    const thumbStyle = project.image
+      ? `style="background-image: url('${project.image}');"`
+      : '';
 
     return `
       <div class="project-card ${index === activeProjectIndex ? 'active' : ''}" data-index="${index}">
-        <div class="project-card__thumb ${project.image ? '' : 'project-card__thumb--placeholder'}">
+        <div class="${thumbClass}" ${thumbStyle}>
           ${project.image
-            ? `<img src="${project.image}" alt="${title}">`
+            ? `<span class="project-card__sr-only">${title}</span>`
             : `<span class="placeholder-icon">${project.emoji}</span>`
           }
         </div>
@@ -605,7 +642,7 @@ function openProjectModal(project) {
   if (modalVariant === 'about-story') {
     hideModalThumb();
   } else if (project.image) {
-    setModalThumbContent(`<img src="${project.image}" alt="${projectTitle}">`);
+    setModalThumbContent(`<div class="modal-thumb__fill" style="background-image: url('${project.image}');" role="img" aria-label="${projectTitle}"></div>`);
   } else {
     setModalThumbContent(`<span class="placeholder-icon">${project.emoji}</span>`);
   }
