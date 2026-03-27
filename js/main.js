@@ -5,6 +5,7 @@
 
 const GITHUB_PROFILE_URL = 'https://github.com/ochristopherfilipe';
 const CHURN_NOTEBOOK_URL = 'https://github.com/ochristopherfilipe/chance-de-cancelamento';
+const SAGUI_TRANSLATOR_REPO_URL = 'https://github.com/ochristopherfilipe/tradutor-sagui-humano';
 const VIRTUAL_INSTRUMENT_REPO_URL = 'https://github.com/ochristopherfilipe/virtual-instrument-cv';
 const LINKEDIN_PROFILE_URL = 'https://www.linkedin.com/in/christopherfilipe';
 const CONTACT_EMAIL = 'ochristopherfilipe@gmail.com';
@@ -18,6 +19,7 @@ const RESUME_PDF_PATH = 'assets/docs/CV-Christopher.pdf';
 const RESUME_DOC_URL = 'https://docs.google.com/document/d/1zPIRLNYGafgbCHoS46noUxQAtUm6l0eC/edit?usp=sharing&ouid=116316570331701259186&rtpof=true&sd=true';
 const LANGUAGE_STORAGE_KEY = 'portfolio-language';
 const PROFILE_IMAGE_PATH = 'assets/images/perfil.png?v=20260324-1';
+const SAGUI_CARD_IMAGE = 'assets/images/sagui.png';
 const VIRTUAL_INSTRUMENT_CARD_IMAGE = 'assets/images/instrumento-cv.png?v=20260324-1';
 const WHATSAPP_ICON = `
   <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -195,6 +197,29 @@ const PROJECTS = [
     richDescription: true,
     hideMissingLinkAction: true,
     cardClickAction: 'contact',
+  },
+  {
+    id: 13,
+    category: 'datascience',
+    title: {
+      'pt-BR': 'Tradutor Sagui / Humano',
+      en: 'Marmoset-to-Human Translator',
+    },
+    emoji: '🐵',
+    description: {
+      'pt-BR': 'Projeto de bioacústica computacional que classifica vocalizações de saguis, organiza padrões sonoros em mapas 3D e simula tradução em tempo real via arquivo WAV ou microfone, combinando super-features, LDA e SVM para interpretar famílias biológicas de chamadas.',
+      en: 'Computational bioacoustics project that classifies marmoset vocalizations, organizes sound patterns in 3D maps, and simulates real-time translation from WAV uploads or microphone input, combining super-features, LDA, and SVM to interpret biological call families.',
+    },
+    tags: {
+      'pt-BR': ['Python', 'Bioacústica', 'Librosa', 'SVM', 'Plotly'],
+      en: ['Python', 'Bioacoustics', 'Librosa', 'SVM', 'Plotly'],
+    },
+    actionLabel: {
+      'pt-BR': 'Ver repositório',
+      en: 'View repository',
+    },
+    link: SAGUI_TRANSLATOR_REPO_URL,
+    image: SAGUI_CARD_IMAGE,
   },
   {
     id: 1,
