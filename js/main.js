@@ -4,9 +4,13 @@
    ============================================ */
 
 const GITHUB_PROFILE_URL = 'https://github.com/ochristopherfilipe';
+const AB_TESTING_REPO_URL = 'https://github.com/ochristopherfilipe/teste-A-B';
 const CHURN_NOTEBOOK_URL = 'https://github.com/ochristopherfilipe/chance-de-cancelamento';
 const SAGUI_TRANSLATOR_REPO_URL = 'https://github.com/ochristopherfilipe/tradutor-sagui-humano';
 const VIRTUAL_INSTRUMENT_REPO_URL = 'https://github.com/ochristopherfilipe/virtual-instrument-cv';
+const MANAUS_MOTORS_REPO_URL = 'https://github.com/ochristopherfilipe/filiais-manaus-car';
+const FINTECH_SQL_REPO_URL = 'https://github.com/ochristopherfilipe/fintech-analytics-portfolio';
+const ESTUDAE_REPO_URL = 'https://github.com/ochristopherfilipe/estudae';
 const LINKEDIN_PROFILE_URL = 'https://www.linkedin.com/in/christopherfilipe';
 const CONTACT_EMAIL = 'ochristopherfilipe@gmail.com';
 const CONTACT_WHATSAPP = '+55 92 99996-1672';
@@ -19,6 +23,9 @@ const RESUME_PDF_PATH = 'assets/docs/CV-Christopher.pdf';
 const RESUME_DOC_URL = 'https://docs.google.com/document/d/1zPIRLNYGafgbCHoS46noUxQAtUm6l0eC/edit?usp=sharing&ouid=116316570331701259186&rtpof=true&sd=true';
 const LANGUAGE_STORAGE_KEY = 'portfolio-language';
 const PROFILE_IMAGE_PATH = 'assets/images/perfil.png?v=20260324-1';
+const ABOUT_IMAGE_PATH = 'assets/images/sobre-mim.png';
+const CONTACT_IMAGE_PATH = 'assets/images/contato.png';
+const AB_TESTING_CARD_IMAGE = 'assets/images/teste-a-b.png?v=20260328-1';
 const SAGUI_CARD_IMAGE = 'assets/images/sagui.png';
 const VIRTUAL_INSTRUMENT_CARD_IMAGE = 'assets/images/instrumento-cv.png?v=20260324-1';
 const WHATSAPP_ICON = `
@@ -36,7 +43,7 @@ const ABOUT_STORY = {
     <div class="about-story">
       <p class="about-story__lead">Como <strong>Analista de Dados</strong> sou capaz de transformar informações em <strong>insights valiosos</strong>.</p>
       <p>Minha jornada profissional é guiada pela <strong>exploração de dados</strong>, criação de <strong>visualizações impactantes</strong> e <strong>resolução de problemas complexos</strong>. Busco desvendar <strong>padrões ocultos</strong> nos dados, contando <strong>histórias convincentes</strong> por meio de análises.</p>
-      <p>Meu portfólio inclui projetos de Dados desde <strong>previsões de tendências</strong> até a <strong>segmentação de clientes</strong>, e aplicações práticas no <strong>Power BI</strong> para simplificar dados complexos.</p>
+      <p>Meu portfólio inclui projetos de Dados desde <strong>previsões de tendências</strong> até a <strong>segmentação de clientes</strong>, além de <strong>dashboards</strong> e <strong>análises em SQL</strong> para simplificar informações complexas.</p>
       <p>Possuo habilidades em <strong>manipulação de dados com Python</strong>, <strong>análise estatística</strong>, <strong>modelagem</strong>, <strong>visualização de dados</strong>, <strong>SQL</strong>, <strong>limpeza</strong> e <strong>preparação de dados</strong>.</p>
     </div>
   `,
@@ -44,7 +51,7 @@ const ABOUT_STORY = {
     <div class="about-story">
       <p class="about-story__lead">As a <strong>Data Analyst</strong>, I can turn information into <strong>valuable insights</strong>.</p>
       <p>My professional journey is guided by <strong>data exploration</strong>, the creation of <strong>impactful visualizations</strong>, and the <strong>solution of complex problems</strong>. I strive to uncover <strong>hidden patterns</strong> in data and tell <strong>compelling stories</strong> through analysis.</p>
-      <p>My portfolio includes data projects ranging from <strong>trend forecasting</strong> to <strong>customer segmentation</strong>, along with practical applications in <strong>Power BI</strong> to simplify complex information.</p>
+      <p>My portfolio includes data projects ranging from <strong>trend forecasting</strong> to <strong>customer segmentation</strong>, along with <strong>dashboards</strong> and <strong>SQL analysis</strong> to simplify complex information.</p>
       <p>I have skills in <strong>data manipulation with Python</strong>, <strong>statistical analysis</strong>, <strong>modeling</strong>, <strong>data visualization</strong>, <strong>SQL</strong>, <strong>cleaning</strong>, and <strong>data preparation</strong>.</p>
     </div>
   `,
@@ -53,7 +60,7 @@ const ABOUT_STORY = {
 const UI_TEXT = {
   'pt-BR': {
     pageTitle: 'Christopher Santos | Portfólio',
-    metaDescription: 'Portfólio de Christopher Santos — Ciência de Dados, Power BI, Automação, IA e Sistemas.',
+    metaDescription: 'Portfólio de Christopher Santos — Ciência de Dados, Dashboards, SQL, Automação, IA e Sistemas.',
     dockAria: 'Categorias do portfólio',
     categorySuffix: 'PROJETOS',
     disclaimer: 'Todos os dados usados são exclusivamente para fins de demonstração, garantindo total privacidade e conformidade ética.',
@@ -75,17 +82,17 @@ const UI_TEXT = {
     contactWhatsAppAction: 'Abrir WhatsApp',
     aboutCategory: 'Sobre',
     aboutDescription: ABOUT_STORY['pt-BR'],
-    aboutTags: ['Python', 'Power BI', 'SQL', 'JavaScript', 'Machine Learning', 'Automação'],
+    aboutTags: ['Python', 'Dashboards', 'SQL', 'JavaScript', 'Machine Learning', 'Automação'],
     aboutAction: 'GitHub',
     resumeCategory: 'Currículo',
     resumeDescription: 'Escolha como deseja acessar o currículo:<br><br><strong>Baixar PDF</strong> para salvar uma cópia no dispositivo, ou <strong>abrir online</strong> para visualizar a versão no Google Docs.',
-    resumeTags: ['Python', 'Power BI', 'SQL', 'JavaScript', 'Machine Learning', 'Automação', 'IA'],
+    resumeTags: ['Python', 'Dashboards', 'SQL', 'JavaScript', 'Machine Learning', 'Automação', 'IA'],
     resumeDownload: 'Baixar PDF',
     resumeOnline: 'Abrir online',
   },
   en: {
     pageTitle: 'Christopher Santos | Portfolio',
-    metaDescription: 'Christopher Santos portfolio — Data Science, Power BI, Automation, AI and Systems.',
+    metaDescription: 'Christopher Santos portfolio — Data Science, Dashboards, SQL, Automation, AI and Systems.',
     dockAria: 'Portfolio categories',
     categorySuffix: 'PROJECTS',
     disclaimer: 'All data used is strictly for demonstration purposes, ensuring privacy and ethical compliance.',
@@ -107,11 +114,11 @@ const UI_TEXT = {
     contactWhatsAppAction: 'Open WhatsApp',
     aboutCategory: 'About',
     aboutDescription: ABOUT_STORY.en,
-    aboutTags: ['Python', 'Power BI', 'SQL', 'JavaScript', 'Machine Learning', 'Automation'],
+    aboutTags: ['Python', 'Dashboards', 'SQL', 'JavaScript', 'Machine Learning', 'Automation'],
     aboutAction: 'GitHub',
     resumeCategory: 'Resume',
     resumeDescription: "Choose how you'd like to access the resume:<br><br><strong>Download the PDF</strong> to save a local copy, or <strong>open it online</strong> to view the Google Docs version.",
-    resumeTags: ['Python', 'Power BI', 'SQL', 'JavaScript', 'Machine Learning', 'Automation', 'AI'],
+    resumeTags: ['Python', 'Dashboards', 'SQL', 'JavaScript', 'Machine Learning', 'Automation', 'AI'],
     resumeDownload: 'Download PDF',
     resumeOnline: 'Open online',
   },
@@ -120,7 +127,7 @@ const UI_TEXT = {
 const CATEGORIES = [
   { id: 'home',        icon: 'assets/icons/home.png',                          label: { 'pt-BR': 'Home',               en: 'Home' } },
   { id: 'datascience', icon: 'assets/icons/graph.png',                         label: { 'pt-BR': 'Ciência de Dados',   en: 'Data Science' } },
-  { id: 'powerbi',     icon: 'assets/icons/Microsoft-Power-BI-Logo-2013.png',  label: { 'pt-BR': 'Power BI',           en: 'Power BI' } },
+  { id: 'dashboards',  icon: 'assets/images/dashboard.png',                     label: { 'pt-BR': 'Dashboards & SQL',   en: 'Dashboards & SQL' } },
   { id: 'automacao',   icon: 'assets/icons/robotic.png',                       label: { 'pt-BR': 'Automação e I.A.',   en: 'Automation & AI' } },
   { id: 'sistemas',    icon: 'assets/icons/cloud-server.png',                  label: { 'pt-BR': 'Sistemas',           en: 'Systems' } },
   { id: 'curriculo',   icon: 'assets/icons/docs.png',                          label: { 'pt-BR': 'Currículo',          en: 'Resume' } },
@@ -163,11 +170,11 @@ const PROJECTS = [
     emoji: '🧠',
     description: ABOUT_STORY,
     tags: {
-      'pt-BR': ['Python', 'SQL', 'Power BI', 'Visualização de Dados'],
-      en: ['Python', 'SQL', 'Power BI', 'Data Visualization'],
+      'pt-BR': ['Python', 'SQL', 'Dashboards', 'Visualização de Dados'],
+      en: ['Python', 'SQL', 'Dashboards', 'Data Visualization'],
     },
     link: '#',
-    image: '',
+    image: ABOUT_IMAGE_PATH,
     richDescription: true,
     hideMissingLinkAction: true,
     modalVariant: 'about-story',
@@ -193,7 +200,7 @@ const PROJECTS = [
       en: [],
     },
     link: '#',
-    image: '',
+    image: CONTACT_IMAGE_PATH,
     richDescription: true,
     hideMissingLinkAction: true,
     cardClickAction: 'contact',
@@ -222,42 +229,27 @@ const PROJECTS = [
     image: SAGUI_CARD_IMAGE,
   },
   {
-    id: 1,
-    category: 'datascience',
-    title: {
-      'pt-BR': 'Sistema de Manutenção Preditiva',
-      en: 'Predictive Maintenance System',
-    },
-    emoji: '⚡',
-    description: {
-      'pt-BR': 'Sistema de manutenção preditiva que utiliza modelos de machine learning para prever falhas em equipamentos industriais, reduzindo tempo de inatividade e custos operacionais.',
-      en: 'Predictive maintenance system that uses machine learning models to forecast failures in industrial equipment, reducing downtime and operational costs.',
-    },
-    tags: {
-      'pt-BR': ['Python', 'Scikit-learn', 'Pandas', 'Machine Learning'],
-      en: ['Python', 'Scikit-learn', 'Pandas', 'Machine Learning'],
-    },
-    link: '#',
-    image: '',
-  },
-  {
     id: 2,
     category: 'datascience',
     title: {
-      'pt-BR': 'Modelo de Segmentação de Clientes',
-      en: 'Customer Segmentation Model',
+      'pt-BR': 'Teste A/B em Marketing',
+      en: 'Marketing A/B Test Analysis',
     },
-    emoji: '👥',
+    emoji: '🧪',
     description: {
-      'pt-BR': 'Modelo de segmentação de clientes usando técnicas de clustering (K-Means, DBSCAN) para identificar perfis comportamentais e otimizar estratégias de marketing.',
-      en: 'Customer segmentation model using clustering techniques such as K-Means and DBSCAN to identify behavioral profiles and optimize marketing strategies.',
+      'pt-BR': 'Análise de teste A/B com 588 mil registros para comparar as taxas de conversão entre os grupos ad e psa, combinando exploração de dados, teste t, ANOVA e visualizações por dia, hora e intensidade de exposição aos anúncios.',
+      en: 'A/B testing analysis over 588k records comparing conversion rates between the ad and psa groups, combining exploratory analysis, t-test, ANOVA, and visualizations by day, hour, and ad exposure intensity.',
     },
     tags: {
-      'pt-BR': ['Python', 'K-Means', 'Seaborn', 'Análise de Dados'],
-      en: ['Python', 'K-Means', 'Seaborn', 'Data Analysis'],
+      'pt-BR': ['Python', 'Pandas', 'SciPy', 'Seaborn', 'Teste A/B'],
+      en: ['Python', 'Pandas', 'SciPy', 'Seaborn', 'A/B Testing'],
     },
-    link: '#',
-    image: '',
+    actionLabel: {
+      'pt-BR': 'Ver repositório',
+      en: 'View repository',
+    },
+    link: AB_TESTING_REPO_URL,
+    image: AB_TESTING_CARD_IMAGE,
   },
   {
     id: 3,
@@ -283,42 +275,50 @@ const PROJECTS = [
     image: 'assets/images/churn3.png?v=20260324-1',
   },
   {
-    id: 4,
-    category: 'powerbi',
+    id: 15,
+    category: 'dashboards',
     title: {
-      'pt-BR': 'Dashboard de Vendas em Power BI',
-      en: 'Power BI Sales Dashboard',
+      'pt-BR': 'Fintech Analytics Portfolio - PostgreSQL',
+      en: 'Fintech Analytics Portfolio - PostgreSQL',
     },
-    emoji: '💰',
+    emoji: '🗄️',
     description: {
-      'pt-BR': 'Dashboard interativo de vendas com análise de receita, mix de produtos, performance regional e drill-through para detalhamento por vendedor.',
-      en: 'Interactive sales dashboard with revenue analysis, product mix, regional performance, and drill-through views by salesperson.',
+      'pt-BR': 'Projeto de SQL analítico que simula a operação de uma fintech, com modelagem relacional, carga de dados fictícios e consultas para detecção de fraude, conciliação de saldo diário e identificação de churn em contas inativas.',
+      en: 'Analytical SQL project that simulates a fintech operation, with relational modeling, fictional data loading, and queries for fraud detection, daily balance reconciliation, and churn identification in inactive accounts.',
     },
     tags: {
-      'pt-BR': ['Power BI', 'DAX', 'ETL', 'Análise de Vendas'],
-      en: ['Power BI', 'DAX', 'ETL', 'Sales Analytics'],
+      'pt-BR': ['SQL', 'PostgreSQL', 'Fintech', 'CTEs', 'Window Functions'],
+      en: ['SQL', 'PostgreSQL', 'Fintech', 'CTEs', 'Window Functions'],
     },
-    link: '#',
-    image: '',
+    actionLabel: {
+      'pt-BR': 'Ver repositório',
+      en: 'View repository',
+    },
+    link: FINTECH_SQL_REPO_URL,
+    image: 'assets/images/sql.png',
   },
   {
-    id: 5,
-    category: 'powerbi',
+    id: 14,
+    category: 'dashboards',
     title: {
-      'pt-BR': 'Dashboard Financeiro de KPIs',
-      en: 'Financial KPI Dashboard',
+      'pt-BR': 'Manaus Motors - Analytics Dashboard',
+      en: 'Manaus Motors - Analytics Dashboard',
     },
-    emoji: '📊',
+    emoji: '🏎️',
     description: {
-      'pt-BR': 'Painel financeiro com KPIs de lucratividade, margem operacional, fluxo de caixa e comparativo mês a mês com metas estabelecidas.',
-      en: 'Financial dashboard with profitability, operating margin, cash flow KPIs, and month-over-month comparisons against defined targets.',
+      'pt-BR': 'Dashboard executivo desenvolvido em Streamlit para uma concessionária premium de Manaus, com visualização geoespacial em 3D, acompanhamento do mix de veículos elétricos e KPIs de receita, volume vendido e ROI em tempo real.',
+      en: 'Executive dashboard built with Streamlit for a premium car dealership in Manaus, featuring 3D geospatial visualization, electric-vehicle mix tracking, and real-time revenue, sales volume, and ROI KPIs.',
     },
     tags: {
-      'pt-BR': ['Power BI', 'DAX', 'Finanças'],
-      en: ['Power BI', 'DAX', 'Finance'],
+      'pt-BR': ['Dashboards', 'Streamlit', 'PyDeck', 'Plotly', 'Geoanálise'],
+      en: ['Dashboards', 'Streamlit', 'PyDeck', 'Plotly', 'Geoanalytics'],
     },
-    link: '#',
-    image: '',
+    actionLabel: {
+      'pt-BR': 'Ver repositório',
+      en: 'View repository',
+    },
+    link: MANAUS_MOTORS_REPO_URL,
+    image: 'assets/images/dash-car.png',
   },
   {
     id: 12,
@@ -344,118 +344,27 @@ const PROJECTS = [
     image: VIRTUAL_INSTRUMENT_CARD_IMAGE,
   },
   {
-    id: 6,
-    category: 'automacao',
-    title: {
-      'pt-BR': 'Bot de Relatórios Automatizados',
-      en: 'Automated Reporting Bot',
-    },
-    emoji: '🤖',
-    description: {
-      'pt-BR': 'Bot automatizado que coleta dados de múltiplas fontes, gera relatórios em PDF e envia por e-mail semanalmente para stakeholders.',
-      en: 'Automated bot that gathers data from multiple sources, generates PDF reports, and emails them weekly to stakeholders.',
-    },
-    tags: {
-      'pt-BR': ['Python', 'Selenium', 'Automação', 'PDF'],
-      en: ['Python', 'Selenium', 'Automation', 'PDF'],
-    },
-    link: '#',
-    image: '',
-  },
-  {
-    id: 7,
-    category: 'automacao',
-    title: {
-      'pt-BR': 'Pipeline de Web Scraping',
-      en: 'Web Scraping Pipeline',
-    },
-    emoji: '🕷️',
-    description: {
-      'pt-BR': 'Pipeline de web scraping para coleta automatizada de dados de mercado, com tratamento de dados e armazenamento em banco de dados.',
-      en: 'Web scraping pipeline for automated market data collection, with data processing and database storage.',
-    },
-    tags: {
-      'pt-BR': ['Python', 'BeautifulSoup', 'PostgreSQL'],
-      en: ['Python', 'BeautifulSoup', 'PostgreSQL'],
-    },
-    link: '#',
-    image: '',
-  },
-  {
-    id: 8,
-    category: 'automacao',
-    title: {
-      'pt-BR': 'Analisador de Sentimentos com NLP',
-      en: 'NLP Sentiment Analyzer',
-    },
-    emoji: '💬',
-    description: {
-      'pt-BR': 'Analisador de sentimentos em textos usando processamento de linguagem natural para classificar feedbacks de clientes.',
-      en: 'Sentiment analysis tool using natural language processing to classify customer feedback.',
-    },
-    tags: {
-      'pt-BR': ['Python', 'NLP', 'Transformers', 'BERT'],
-      en: ['Python', 'NLP', 'Transformers', 'BERT'],
-    },
-    link: '#',
-    image: '',
-  },
-  {
-    id: 9,
-    category: 'automacao',
-    title: {
-      'pt-BR': 'Controle de Qualidade com Visão Computacional',
-      en: 'Computer Vision QC',
-    },
-    emoji: '👁️',
-    description: {
-      'pt-BR': 'Sistema de controle de qualidade visual usando redes neurais convolucionais para detectar defeitos em linha de produção.',
-      en: 'Visual quality control system using convolutional neural networks to detect defects on production lines.',
-    },
-    tags: {
-      'pt-BR': ['Python', 'TensorFlow', 'OpenCV'],
-      en: ['Python', 'TensorFlow', 'OpenCV'],
-    },
-    link: '#',
-    image: '',
-  },
-  {
-    id: 10,
+    id: 16,
     category: 'sistemas',
     title: {
-      'pt-BR': 'Sistema de Gestão Eclesiástica',
-      en: 'Church Management System',
+      'pt-BR': 'Estudaê',
+      en: 'Estudae',
     },
-    emoji: '⛪',
+    emoji: '📚',
     description: {
-      'pt-BR': 'Sistema completo de gestão eclesiástica com módulos de membros, células, eventos, inscrições, relatórios e painel administrativo.',
-      en: 'Complete church management system with modules for members, cells, events, registrations, reports, and an administrative dashboard.',
+      'pt-BR': 'Aplicação web para acompanhamento de estudos com organização de matérias e assuntos, cronômetro ativo, metas e histórico de sessões em um painel único.',
+      en: 'Web app for study tracking with subjects and topics organization, active timer, goals, and session history in a single dashboard.',
     },
     tags: {
-      'pt-BR': ['PHP', 'PostgreSQL', 'JavaScript', 'Bootstrap'],
-      en: ['PHP', 'PostgreSQL', 'JavaScript', 'Bootstrap'],
+      'pt-BR': ['PHP', 'PostgreSQL', 'JavaScript', 'Cypress'],
+      en: ['PHP', 'PostgreSQL', 'JavaScript', 'Cypress'],
     },
-    link: '#',
-    image: '',
-  },
-  {
-    id: 11,
-    category: 'sistemas',
-    title: {
-      'pt-BR': 'Site Portfólio',
-      en: 'Portfolio Website',
+    actionLabel: {
+      'pt-BR': 'Ver repositório',
+      en: 'View repository',
     },
-    emoji: '🎮',
-    description: {
-      'pt-BR': 'Este portfólio pessoal com interface inspirada em console de videogame, desenvolvido com HTML, CSS e JavaScript puro.',
-      en: 'This personal portfolio features a game-console-inspired interface built with plain HTML, CSS, and JavaScript.',
-    },
-    tags: {
-      'pt-BR': ['HTML', 'CSS', 'JavaScript'],
-      en: ['HTML', 'CSS', 'JavaScript'],
-    },
-    link: '#',
-    image: '',
+    link: ESTUDAE_REPO_URL,
+    image: 'assets/images/estudae.png',
   },
 ];
 
@@ -518,8 +427,17 @@ function hideModalThumb() {
   $modalThumb.innerHTML = '';
 }
 
+function setModalThumbVariant(variant = 'default') {
+  $modalThumb.classList.toggle('modal-thumb--project', variant === 'project');
+}
+
 function setModalVariant(variant = 'default') {
   $modalDialog.classList.toggle('modal-dialog--about-story', variant === 'about-story');
+}
+
+function setModalLayoutVariant(variant = 'default') {
+  $modalDialog.classList.toggle('modal-dialog--project', variant === 'project');
+  $modalDialog.classList.toggle('modal-dialog--contact', variant === 'contact');
 }
 
 function updateClock() {
@@ -531,14 +449,19 @@ function updateClock() {
 function renderDock() {
   $dockBar.innerHTML = CATEGORIES.map(category => {
     const label = getLocalized(category.label);
+    const isActive = category.id === activeCategory;
+    const hasPersistentLabel = ['curriculo', 'contato', 'info'].includes(category.id);
 
     return `
-      <button
-        class="dock-icon ${category.id === activeCategory ? 'active' : ''}"
-        data-category="${category.id}"
-        aria-label="${label}"
-        title="${label}"
-      ><img src="${category.icon}" alt="${label}"></button>
+      <div class="dock-item ${isActive ? 'active' : ''} ${hasPersistentLabel ? 'dock-item--with-caption' : ''}">
+        <span class="dock-item__title">${label}</span>
+        <button
+          class="dock-icon ${isActive ? 'active' : ''}"
+          data-category="${category.id}"
+          aria-label="${label}"
+          title="${label}"
+        ><img src="${category.icon}" alt="${label}"></button>
+      </div>
     `;
   }).join('');
 
@@ -590,18 +513,17 @@ function renderCarousel() {
     const thumbStyle = project.image
       ? `style="background-image: url('${project.image}');"`
       : '';
+    const cardDelay = index * 70;
 
     return `
-      <div class="project-card ${index === activeProjectIndex ? 'active' : ''}" data-index="${index}">
+      <div class="project-card ${index === activeProjectIndex ? 'active' : ''}" data-index="${index}" style="--card-enter-delay: ${cardDelay}ms;">
         <div class="${thumbClass}" ${thumbStyle}>
           ${project.image
-            ? `<span class="project-card__sr-only">${title}</span>`
+            ? ''
             : `<span class="placeholder-icon">${project.emoji}</span>`
           }
         </div>
-        <div class="project-card__label">
-          <h3>${title}</h3>
-        </div>
+        <span class="project-card__sr-only">${title}</span>
       </div>
     `;
   }).join('');
@@ -661,6 +583,8 @@ function openProjectModal(project) {
 
   currentModal = { type: 'project', projectId: project.id };
   setModalVariant(modalVariant);
+  setModalLayoutVariant('project');
+  setModalThumbVariant('project');
   $modalCategory.textContent = modalCategory;
   $modalTitle.textContent = projectTitle;
 
@@ -698,9 +622,11 @@ function openContactModal() {
 
   currentModal = { type: 'contact' };
   setModalVariant();
+  setModalLayoutVariant('contact');
+  setModalThumbVariant();
   $modalCategory.textContent = text.contactCategory;
   $modalTitle.textContent = text.contactTitle;
-  hideModalThumb();
+  setModalThumbContent(`<div class="modal-thumb__fill" style="background-image: url('${CONTACT_IMAGE_PATH}');" role="img" aria-label="${text.contactTitle}"></div>`);
   $modalDesc.innerHTML = `
     <div class="contact-panel">
       <section class="contact-section contact-section--quick">
@@ -752,9 +678,11 @@ function openAboutModal() {
 
   currentModal = { type: 'about' };
   setModalVariant('about-story');
+  setModalLayoutVariant();
+  setModalThumbVariant();
   $modalCategory.textContent = text.aboutCategory;
   $modalTitle.textContent = 'Christopher Santos';
-  hideModalThumb();
+  setModalThumbContent(`<div class="modal-thumb__fill" style="background-image: url('${ABOUT_IMAGE_PATH}');" role="img" aria-label="${text.aboutCategory}"></div>`);
   $modalDesc.innerHTML = text.aboutDescription;
   $modalTags.innerHTML = text.aboutTags.map(tag => `<span class="modal-tag">${tag}</span>`).join('');
   $modalActions.innerHTML = `
@@ -769,6 +697,8 @@ function openResumeModal() {
 
   currentModal = { type: 'resume' };
   setModalVariant();
+  setModalLayoutVariant();
+  setModalThumbVariant();
   $modalCategory.textContent = text.resumeCategory;
   $modalTitle.textContent = 'Christopher Santos';
   hideModalThumb();
