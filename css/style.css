@@ -895,6 +895,7 @@ a { text-decoration: none; color: inherit; }
   justify-content: center;
   font-size: 18px;
   transition: background var(--transition);
+  z-index: 6;
 }
 
 .modal-close:hover { background: var(--accent-red); }
@@ -974,7 +975,7 @@ a { text-decoration: none; color: inherit; }
   z-index: 1;
 }
 
-.modal-thumb img,
+.modal-thumb img:not(.modal-thumb__art),
 .modal-thumb__image {
   position: absolute;
   inset: 0;
@@ -993,6 +994,34 @@ a { text-decoration: none; color: inherit; }
   transform: scale(1.04);
   filter: saturate(1.08) contrast(1.04) brightness(0.94);
   z-index: 0;
+}
+
+.modal-thumb__backdrop {
+  position: absolute;
+  inset: -8%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(22px) saturate(.9) brightness(.42);
+  transform: scale(1.08);
+  opacity: .95;
+  z-index: 0;
+}
+
+.modal-thumb__art {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: auto;
+  max-width: 58%;
+  height: 84%;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  box-shadow:
+    0 20px 40px rgba(2, 6, 16, .42),
+    0 0 0 1px rgba(255, 255, 255, .08);
+  z-index: 3;
 }
 
 .modal-thumb .placeholder-icon {
@@ -1598,6 +1627,49 @@ a { text-decoration: none; color: inherit; }
   }
   .modal-dialog {
     width: calc(100% - 24px);
-    padding: 22px 18px;
+    padding: 24px 18px 22px;
+    padding-top: 58px;
+  }
+  .modal-close {
+    top: 10px;
+    right: 10px;
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+    background: rgba(6, 14, 28, 0.82);
+    border: 1px solid rgba(134, 238, 255, 0.16);
+    box-shadow: 0 10px 24px rgba(2, 8, 20, .24);
+  }
+  .modal-dialog--project .modal-thumb__fill {
+    inset: 10px 12px;
+    border-radius: 10px;
+    background-size: contain;
+    transform: none;
+    background-color: rgba(5, 12, 24, .32);
+  }
+  .modal-dialog--project .modal-thumb {
+    width: min(100%, 280px);
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-dialog--project .modal-thumb__backdrop {
+    display: none;
+  }
+  .modal-dialog--project .modal-thumb img.modal-thumb__art {
+    position: relative;
+    inset: auto;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 82%;
+    height: 82%;
+    max-width: none;
+    border-radius: 10px;
+    object-fit: contain;
+    box-shadow:
+      0 14px 28px rgba(2, 6, 16, .28),
+      0 0 0 1px rgba(255, 255, 255, .06);
   }
 }

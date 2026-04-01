@@ -591,7 +591,10 @@ function openProjectModal(project) {
   if (modalVariant === 'about-story') {
     hideModalThumb();
   } else if (project.image) {
-    setModalThumbContent(`<div class="modal-thumb__fill" style="background-image: url('${project.image}');" role="img" aria-label="${projectTitle}"></div>`);
+    setModalThumbContent(`
+      <div class="modal-thumb__backdrop" style="background-image: url('${project.image}');" aria-hidden="true"></div>
+      <img class="modal-thumb__art" src="${project.image}" alt="${projectTitle}">
+    `);
   } else {
     setModalThumbContent(`<span class="placeholder-icon">${project.emoji}</span>`);
   }
