@@ -20,7 +20,7 @@ const CONTACT_LOCATION = {
   en: 'Brazil',
 };
 const RESUME_PDF_PATH = 'assets/docs/CV-Christopher.pdf';
-const RESUME_DOC_URL = 'https://docs.google.com/document/d/1zPIRLNYGafgbCHoS46noUxQAtUm6l0eC/edit?usp=sharing&ouid=116316570331701259186&rtpof=true&sd=true';
+const RESUME_DOC_URL = 'https://docs.google.com/document/d/10CDIZJin1Cjrg7aGPwgd82yYZYFJnbCBA0NP17tvTzA/edit?usp=sharing';
 const LANGUAGE_STORAGE_KEY = 'portfolio-language';
 const PROFILE_IMAGE_PATH = 'assets/images/perfil.png?v=20260324-1';
 const ABOUT_IMAGE_PATH = 'assets/images/sobre-mim.png';
