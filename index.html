@@ -6,80 +6,221 @@
     <title>Christopher Santos | Portfólio</title>
     <meta name="description" content="Portfólio de Christopher Santos — Ciência de Dados, Dashboards, SQL, Automação, IA e Sistemas." id="page-description">
     <link rel="icon" href="assets/generated/cs-mark.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/style.css?v=20260401-6">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=20260811">
 </head>
 <body>
-    <div class="shell">
 
-        <!-- ======== HEADER ======== -->
-        <header class="header">
-            <div class="header-left">
-                <div class="avatar-group">
-                    <div class="avatar">
-                        <img src="assets/images/perfil.png?v=20260324-1" alt="Christopher Santos">
+    <!-- ======== NAVBAR ======== -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar__inner">
+            <a href="#hero" class="navbar__brand">
+                <span class="navbar__name">Christopher Santos</span>
+                <span class="navbar__role" id="navbar-role">ANALISTA DE DADOS</span>
+            </a>
+            <nav class="navbar__nav" id="navbar-nav" aria-label="Navegação principal"></nav>
+            <div class="navbar__actions">
+                <button class="btn-lang" id="btn-language" aria-label="Toggle language">PT / EN</button>
+                <a href="#contact" class="btn btn--primary btn--sm" id="btn-talk">
+                    <span id="btn-talk-label">Vamos Conversar</span>
+                    <span class="btn__arrow">→</span>
+                </a>
+            </div>
+            <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ======== MOBILE MENU ======== -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <nav class="mobile-menu__nav" id="mobile-nav"></nav>
+        <div class="mobile-menu__actions">
+            <button class="btn-lang" id="btn-language-mobile" aria-label="Toggle language">PT / EN</button>
+        </div>
+    </div>
+
+    <main>
+        <!-- ======== HERO ======== -->
+        <section class="hero" id="hero">
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <span class="hero__eyebrow" id="hero-eyebrow">CIÊNCIA DE DADOS &amp; ANALYTICS</span>
+                    <h1 class="hero__title" id="hero-title">Transformo dados em <em>insights</em> que impulsionam decisões inteligentes.</h1>
+                    <p class="hero__subtitle" id="hero-subtitle">Analista de Dados com experiência em Python, SQL, Machine Learning e visualização de dados. Criando soluções baseadas em dados para problemas complexos.</p>
+                    <div class="hero__ctas">
+                        <a href="#projects" class="btn btn--primary" id="hero-cta-projects">
+                            <span>Ver Projetos</span>
+                            <span class="btn__arrow">→</span>
+                        </a>
+                        <a href="#contact" class="btn btn--outline" id="hero-cta-contact">
+                            <span>Vamos Conversar</span>
+                            <span class="btn__arrow">→</span>
+                        </a>
                     </div>
                 </div>
-                <span class="user-name">
-                    <span class="user-name__full">Christopher Santos</span>
-                    <span class="user-name__short">Christopher</span>
-                </span>
-            </div>
-
-            <div class="header-right">
-                <span class="header-time" id="clock">00:00</span>
-                <div class="signal-bars">
-                    <span></span><span></span><span></span><span></span>
-                </div>
-                <img src="assets/icons/wifi.png" alt="Wi-Fi" class="wifi-icon">
-                <span>82%</span>
-                <div class="battery">
-                    <div class="battery-level"></div>
-                    <div class="battery-tip"></div>
+                <div class="hero__visual">
+                    <div class="hero__image-wrapper">
+                        <img src="assets/images/perfil.png?v=20260324-1" alt="Christopher Santos" class="hero__image">
+                    </div>
+                    <div class="hero__decorations" aria-hidden="true">
+                        <div class="hero__deco hero__deco--diamond"></div>
+                        <div class="hero__deco hero__deco--circle"></div>
+                        <div class="hero__deco hero__deco--dots"></div>
+                    </div>
                 </div>
             </div>
-        </header>
+        </section>
 
-        <!-- ======== CATEGORY TITLE ======== -->
-        <div class="category-title-bar">
-            <h2 class="category-title" id="category-title">DATA SCIENCE PROJECT</h2>
-        </div>
+        <!-- ======== PROJECTS ======== -->
+        <section class="section projects" id="projects">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section__eyebrow" id="projects-eyebrow">PROJETOS SELECIONADOS</span>
+                    <div class="section__header">
+                        <h2 class="section__title" id="projects-title">Projetos em Destaque</h2>
+                    </div>
+                </div>
+                <div class="projects__filters reveal" id="projects-filters"></div>
+                <div class="projects__grid" id="projects-grid"></div>
+            </div>
+        </section>
 
-        <!-- ======== CAROUSEL ======== -->
-        <div class="carousel-area">
-            <div class="carousel-wrapper">
-                <div class="carousel-track" id="carousel-track">
-                    <!-- Cards are injected by JS -->
+        <!-- ======== SERVICES ======== -->
+        <section class="section section--alt services" id="services">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section__eyebrow" id="services-eyebrow">O QUE EU FAÇO</span>
+                    <h2 class="section__title" id="services-title">Serviços</h2>
+                </div>
+                <div class="services__grid" id="services-grid"></div>
+            </div>
+        </section>
+
+        <!-- ======== ABOUT ======== -->
+        <section class="section about" id="about">
+            <div class="container about__inner">
+                <div class="about__card-wrapper reveal">
+                    <a href="https://www.linkedin.com/in/christopherfilipe" target="_blank" rel="noreferrer" class="linkedin-card" aria-label="Perfil do LinkedIn de Christopher Santos">
+                        <div class="linkedin-card__header">
+                            <div class="linkedin-card__avatar-wrapper">
+                                <img src="assets/images/perfil.png?v=20260324-1" alt="Christopher Santos" class="linkedin-card__avatar">
+                                <span class="linkedin-card__badge-icon">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.78a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg>
+                                </span>
+                            </div>
+                            <div class="linkedin-card__info">
+                                <h3 class="linkedin-card__name">Christopher Santos</h3>
+                                <p class="linkedin-card__headline">Programador &amp; Analista de Dados</p>
+                                <span class="linkedin-card__location">📍 Brasil</span>
+                            </div>
+                        </div>
+                        <div class="linkedin-card__body">
+                            <p class="linkedin-card__quote">"Resolvo problemas reais com código, dados e automação — do zero à produção."</p>
+                        </div>
+                        <div class="linkedin-card__footer">
+                            <span class="linkedin-card__btn">
+                                <span>Ver perfil no LinkedIn</span>
+                                <span class="linkedin-card__arrow">↗</span>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="about__content reveal">
+                    <span class="section__eyebrow" id="about-eyebrow">SOBRE MIM</span>
+                    <h2 class="section__title" id="about-title">Christopher Santos</h2>
+                    <div class="about__text" id="about-text"></div>
+                    <div class="about__tags" id="about-tags"></div>
+                    <div class="about__actions">
+                        <a href="#" class="btn btn--primary" id="about-github" target="_blank" rel="noreferrer">
+                            <span id="about-github-label">GitHub</span>
+                            <span class="btn__arrow">→</span>
+                        </a>
+                        <button class="btn btn--outline" id="about-resume">
+                            <span id="about-resume-label">Currículo</span>
+                            <span class="btn__arrow">→</span>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="carousel-dots" id="carousel-dots"></div>
-        </div>
+        </section>
 
-        <!-- ======== DOCK ======== -->
-        <nav class="dock-bar" id="dock-bar" aria-label="Categorias do portfólio">
-            <!-- Dock icons injected by JS -->
-        </nav>
-
-        <!-- ======== FOOTER BAR ======== -->
-        <footer class="footer-bar">
-            <div class="footer-right">
-                <button class="footer-action footer-action--github" id="btn-view-project">
-                    <span class="footer-action__key" id="btn-view-project-key">+</span>
-                    <span id="btn-view-project-label">Ver GitHub</span>
-                </button>
-                <button class="footer-action footer-action--language" id="btn-open-details">
-                    <span class="footer-action__key" id="btn-open-details-key">=</span>
-                    <span id="btn-open-details-label">Português/English</span>
-                </button>
+        <!-- ======== PROCESS ======== -->
+        <section class="section section--alt process" id="process">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section__eyebrow" id="process-eyebrow">MEU PROCESSO</span>
+                    <h2 class="section__title" id="process-title">Como Eu Trabalho</h2>
+                </div>
+                <div class="process__grid" id="process-grid"></div>
             </div>
-        </footer>
+        </section>
 
-        <!-- ======== DISCLAIMER ======== -->
-        <div class="disclaimer-card" id="disclaimer-card">
-            <span class="disclaimer-icon">🔒</span>
-            <p id="disclaimer-text">Todos os dados usados são exclusivamente para fins de demonstração, garantindo total privacidade e conformidade ética.</p>
+        <!-- ======== CONTACT ======== -->
+        <section class="section section--dark contact" id="contact">
+            <div class="container">
+                <div class="contact__inner">
+                    <div class="contact__text reveal">
+                        <span class="section__eyebrow section__eyebrow--light" id="contact-eyebrow">VAMOS CRIAR ALGO JUNTOS</span>
+                        <h2 class="section__title section__title--light" id="contact-heading">Tem um projeto em mente?<br>Adoraria conversar.</h2>
+                        <a href="#" class="btn btn--primary-light" id="contact-cta">
+                            <span id="contact-cta-label">Vamos Conversar</span>
+                            <span class="btn__arrow">→</span>
+                        </a>
+                    </div>
+                    <div class="contact__details reveal" id="contact-details">
+                        <div class="contact__item">
+                            <strong id="contact-email-label">Email</strong>
+                            <a href="mailto:ochristopherfilipe@gmail.com" class="contact__link">
+                                <span>ochristopherfilipe@gmail.com</span>
+                                <span class="contact__icon-arrow">↗</span>
+                            </a>
+                        </div>
+                        <div class="contact__item">
+                            <strong>WhatsApp</strong>
+                            <a href="https://wa.me/5547997287223" target="_blank" rel="noreferrer" id="contact-whatsapp-value" class="contact__link">
+                                <span>+55 47 99728-7223</span>
+                                <span class="contact__icon-arrow">↗</span>
+                            </a>
+                        </div>
+                        <div class="contact__item">
+                            <strong id="contact-location-label">Localização</strong>
+                            <span id="contact-location">Brasil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <span class="footer__name">Christopher Santos</span>
+                    <span class="footer__role" id="footer-role">ANALISTA DE DADOS</span>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading" id="footer-nav-heading">NAVEGAÇÃO</h4>
+                    <nav class="footer__links" id="footer-nav-links"></nav>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading" id="footer-social-heading">REDES</h4>
+                    <div class="footer__links" id="footer-social-links">
+                        <a href="https://github.com/ochristopherfilipe" target="_blank" rel="noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/in/christopherfilipe" target="_blank" rel="noreferrer">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span id="footer-rights">© 2024 Christopher Santos. Todos os direitos reservados.</span>
+                <span class="footer__disclaimer" id="disclaimer-text">Todos os dados usados são exclusivamente para fins de demonstração, garantindo total privacidade e conformidade ética.</span>
+            </div>
         </div>
-
-    </div>
+    </footer>
 
     <!-- ======== MODAL ======== -->
     <div class="modal-overlay" id="modal-overlay">
@@ -96,6 +237,6 @@
         </div>
     </div>
 
-    <script src="js/main.js?v=20260401-5"></script>
+    <script src="js/main.js?v=20260811"></script>
 </body>
 </html>
