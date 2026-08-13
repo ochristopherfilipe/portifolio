@@ -15,6 +15,7 @@ const VIRTUAL_INSTRUMENT_REPO_URL = 'https://github.com/ochristopherfilipe/virtu
 const MANAUS_MOTORS_REPO_URL = 'https://github.com/ochristopherfilipe/filiais-manaus-car';
 const FINTECH_SQL_REPO_URL = 'https://github.com/ochristopherfilipe/fintech-analytics-portfolio';
 const ESTUDAE_REPO_URL = 'https://github.com/ochristopherfilipe/estudae';
+const PEOPLE_ANALYTICS_REPO_URL = 'https://github.com/ochristopherfilipe/people-analytics-workforce-intelligence';
 const LINKEDIN_PROFILE_URL = 'https://www.linkedin.com/in/christopherfilipe';
 const CONTACT_EMAIL = 'ochristopherfilipe@gmail.com';
 const CONTACT_WHATSAPP = '+55 47 99728-7223';
@@ -32,6 +33,7 @@ const CONTACT_IMAGE_PATH = 'assets/images/contato.png?v=20260811';
 const AB_TESTING_CARD_IMAGE = 'assets/images/teste-a-b.png?v=20260811';
 const SAGUI_CARD_IMAGE = 'assets/images/sagui.png?v=20260811';
 const VIRTUAL_INSTRUMENT_CARD_IMAGE = 'assets/images/instrumento-cv.png?v=20260811';
+const PEOPLE_ANALYTICS_CARD_IMAGE = 'assets/images/people-analytics.png?v=20260813';
 
 /* ===================================================================
    SVG ICONS (kept + new)
@@ -251,6 +253,20 @@ const CATEGORIES = [
    =================================================================== */
 
 const PROJECTS = [
+  {
+    id: 17,
+    category: 'datascience',
+    title: { 'pt-BR': 'People Analytics — Workforce Intelligence', en: 'People Analytics — Workforce Intelligence' },
+    emoji: '👥',
+    description: {
+      'pt-BR': 'Projeto end-to-end de People Analytics cobrindo 4.410 colaboradores e 1,1 milhão de registros de ponto. Inclui diagnóstico de atrito (turnover), detecção do sinal comportamental de quiet quitting via tendência de jornada mensal, modelagem preditiva de risco com SHAP e dashboard executivo Streamlit.',
+      en: 'End-to-end People Analytics project covering 4,410 employees and 1.1 million attendance records. Features turnover diagnostic, quiet quitting behavioral signal detection via temporal work hours trend analysis, predictive attrition risk modeling with SHAP, and Streamlit executive dashboard.',
+    },
+    tags: { 'pt-BR': ['Python', 'People Analytics', 'Machine Learning', 'SHAP', 'Streamlit'], en: ['Python', 'People Analytics', 'Machine Learning', 'SHAP', 'Streamlit'] },
+    actionLabel: { 'pt-BR': 'Ver repositório', en: 'View repository' },
+    link: PEOPLE_ANALYTICS_REPO_URL,
+    image: PEOPLE_ANALYTICS_CARD_IMAGE,
+  },
   {
     id: 100,
     category: 'home',
