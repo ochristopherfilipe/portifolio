@@ -33,7 +33,7 @@ const CONTACT_IMAGE_PATH = 'assets/images/contato.png?v=20260811';
 const AB_TESTING_CARD_IMAGE = 'assets/images/teste-a-b.png?v=20260811';
 const SAGUI_CARD_IMAGE = 'assets/images/sagui.png?v=20260811';
 const VIRTUAL_INSTRUMENT_CARD_IMAGE = 'assets/images/instrumento-cv.png?v=20260811';
-const PEOPLE_ANALYTICS_CARD_IMAGE = 'assets/images/people-analytics.png?v=20260813';
+const PEOPLE_ANALYTICS_CARD_IMAGE = 'assets/images/people-analytics.png?v=20260813-2';
 
 /* ===================================================================
    SVG ICONS (kept + new)
